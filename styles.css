@@ -1,0 +1,100 @@
+.title {
+    font-family: 'Righteous', cursive;
+}
+
+.heading {
+    background-image: url("graphics/header.jfif"); /* Image: Beach House (2021) [Online image] Available from: https://pbs.twimg.com/profile_banners/86196231/1636467683/1500x500 [Accessed 12/12/2021].*/
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h2, h4, h5 {
+    font-family: 'Oswald', sans-serif;
+}
+
+#readmore {
+    text-decoration: underline;
+}
+
+img.album {
+    width: 300px;
+    height: 300px;
+}
+
+.carousel {
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next{
+        bottom: 30%;
+    }
+}
+
+table {
+    table-layout:fixed;
+}
+
+table tr:hover{
+    font-weight: bold;
+}
+
+#songnum {
+    width: 20%;
+}
+
+#tour span {
+    float : right;
+    font-style: italic;
+}
+
+.overlaytext {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+a {
+    color: #ffffff;
+}
+
+td>a, td>a:hover, label>a, p>a {
+    color: #212529;
+}
+
+a:hover {
+    color: #6c757d;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+li:not(.nav-item) {
+    text-decoration: underline;
+}
+
+.footer {  
+    margin-top: auto;
+    color: #ffffff;
+}

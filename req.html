@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Requirements page</title>
+	<link rel="stylesheet" href="reqStyle.css">
+</head>
+<body>
+
+<h1>CMP204 Requirements Page - Unit 2 Assessment</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th class="reqCol">Requirement</th>
+      <th class="metCol">How did you meet this requirement?</th>
+      <th class="fileCol">File name(s), line no.</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>HTML, CSS, JavaScript has been contained within separate files.</td>
+      <td>
+          To follow the best practice, HTML, CSS and JavaScript have all been contained in seperate files.
+          No &lt;script&gt; or &lt;style&gt; tags that have been used contain actual code - instead they link the appropriate file that contains the code that is being used. 
+          Furthermore jQuery and vanilla JavaScript have seperate files as well.</td>
+      <td>Files: index.php (homepage), styles.css, scripts/script.js, scripts/jq_script.js (jQuery script)</td>
+    </tr>
+
+    <tr>
+      <td>A clear use of HTML5.</td>
+      <td>
+          Correct HTML5 document structure has been used - documents begin with &lt;!doctype html&gt; and have a correctly defined structure using &lt;head&gt; and &lt;body&gt; elements.
+          Tags have been closed to ensure code works as intended and indents have been used where necessary to make the document more readable.
+      </td>
+      <td>index.php (lines 3, 6-26 (head element example), 214, 216 (closing tag example))</td>
+    </tr>
+    <tr>
+      <td>Use of the Bootstrap framework providing a responsive layout.</td>
+        <td>
+          Bootstrap framework has been used throuout the entire site for responsive and attractive layout. An example of this is the carousel element
+          whose captions do not appear on viewports smaller than medium to save space.
+        </td>
+      <td>index.php (lines 12,209(bootstrap includes), 62-138 (full carousel), 76 (class contains visibility labels for different viewports))</td>
+    </tr>
+    <tr>
+      <td>Use of JavaScript to manipulate the DOM based on an event.</td>
+      <td>JavaScript event listeners have been used to create a read more/read less clickable paragraph that displays and hides text on click.</td>
+      <td>index.php (line 50), scripts/script.js (lines 15-27)</td>
+    </tr>
+    <tr>
+      <td>Use of jQuery in conjunction with the DOM.</td>
+      <td>
+          jQuery has been used to create a fade effect over an image and display text on it when the mouse cursor hovers it. It has also been used
+          to add an image to the HTML code.
+      </td>
+      <td>index.php (lines 166, 193-199), scripts/jq_script.js (lines 11-23, 36-39)</td>
+    </tr>
+    <tr>
+      <td>Use of AJAX (pure JavaScript i.e. without the use of a library).</td>
+      <td>AJAX has been used with vanilla JavaScript to load a file containing HTML markup for the websites privacy policy.</td>
+      <td>policies.php (line 35), scripts/script.js (lines 30-41), documents/GDPR.txt</td>
+    </tr>
+    <tr>
+      <td>Use of the jQuery AJAX function.</td>
+      <td>jQuery AJAX function has been used to get information about the artists top tracks from Last.fm and display it in a table.</td>
+      <td>index.php (line 159), scripts/jq_script.js (lines 26-34)</td>
+    </tr>
+    <tr>
+      <td>User login functionality (PHP/MySQL).</td>
+      <td>
+        User login functionality has been implemented. It determines whether an user exists and then compares a their password to a
+        password hash from the database. There is an option to log in from the navbar or from the log in page. 
+        User can also log out. (test account - username: test; password: Test1234 (from README.txt))</td>
+      <td>db/login.php (entire file contains login functionality), header.php (lines 36-40, 43), login.php (lines 45-55), db/logout.php (entire file contains logout script) </td>
+    </tr>
+    <tr>
+      <td>Ability to select (SELECT), add (INSERT), edit (UPDATE) and delete (DELETE) information from a database (PHP/MySQL).</td>
+      <td>
+        SELECT statement is used to display the registration date of an user in their profile page. INSERT for inserting information is used for user registration, UPDATE is used
+        for password changing and DELETE is used when deleting an account.
+      </td>
+      <td>
+        SELECT - db/get_date.php (line 8) called from profile.php (line 42)<br>
+        INSERT - db/register.php (line 59) used by register.php (line 45)<br>
+        UPDATE - db/change_pass.php (line 42) used by profile.php (line 53)<br>
+        DELETE - db/delete_acc.php (line 23) used by profile.php (line 78)
+      </td>
+    </tr>
+    <tr>
+      <td>Consideration of GDPR and the Cookie Law.</td>
+      <td>
+        GDPR and cookie laws have been acknowledgend and the privacy policy page contains information about both.
+      </td>
+      <td>documents/GDPR.txt (privay policy), policies.php (line 43 (cookie policy)), header.php (lines 48-57 (popup to inform user about both)), register.php (line 62 (user consent))</td>
+    </tr>
+    <tr>
+      <td>SQL queries written as prepared statements.</td>
+      <td>
+        Every php script that queries a database has the query written as a prepared statement for safety measures. The SQL statement is first prepared and then validated inputs
+        are binded to it before execution. Afterwards it is closed.
+      </td>
+      <td>db/login.php (lines 11-18, 40)</td>
+    </tr>
+    <tr>
+      <td>Passwords should be salted and hashed.</td>
+      <td>
+        Passwords are hashed using password_hash() function and bcrypt algorithm which also salts the passwords on top of hashing them, password_verify() is used to compare the hashed value to 
+        the users provided password when it has been entered.
+      </td>
+      <td>db/register.php (line 57), db/login.php (line 20)</td>
+    </tr>
+    <tr>
+      <td>User input is sanitised.</td>
+        <td>
+          User input is trimmed and validated according to set requirements before querying it to the database (usernames are alphanumeric and passwords need to comply to passowrd policy
+          which is explained on both registration and profile pages), the input is also not displayed in places where potentially malicious code would execute.
+        </td>
+      <td>db/register.php (lines 7-9, 14-25, 41-53)</td>
+    </tr>
+  </tbody>
+
+
+
+</table>
+		
+</body>
+</html>
+
+
+
