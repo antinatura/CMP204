@@ -1,0 +1,33 @@
+<h4>Privacy Policy</h4>
+
+<p>
+    Thank You for choosing to be a part of our community. 
+    We are commited to protecting Your personal information and Your right to privacy.
+    Read our privacy policy here:
+</p>
+
+<ol>
+    <li>Data collected:</li>
+        <dd>
+            We collect personal information that you provide to us.
+            If you sign up to use this websites services we will collect usernames, passwords
+            and other similar information. 
+        </dd> 
+    <li>Justification:</li>
+        <dd>
+            The information that You provide to us is used to facilitate account creation and login processes 
+            and to manage user accounts.
+        </dd>
+    <li>Procession:</li>
+        <dd>
+            We will never share Your information with anyone.
+        </dd>
+    <li>Retention:</li>
+        <dd>
+            Your data is stored securely through a system of organizational and
+            technical security measures and will be deleted if You do not use this website
+            for over a year.
+        </dd>
+    <li>Contacts:</li>
+        <dd>If You have any questions or comments about our policy, contact us at [e-mail]</dd>
+<ol>
